@@ -1,0 +1,9 @@
+--  First stored procedure
+DELIMITER $$
+	CREATE PROCEDURE GET_STUDENTS()
+		BEGIN
+			SELECT * FROM STUDENT;
+        END $$
+DELIMITER ;
+
+CALL GET_STUDENTS();
